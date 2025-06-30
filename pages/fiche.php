@@ -5,6 +5,7 @@
     $cadre = TitleEmployees($bdd,$emp_no);
     $history = Historique($bdd,$emp_no);
 ?>
+<<<<<<< HEAD
 <div class="container mt-4">
     <?php while ($data = mysqli_fetch_assoc($fiche_result)) {?>
         <div class="card mb-4 shadow">

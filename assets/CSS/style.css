@@ -52,3 +52,15 @@
 /* div {
     border: 1px solid black;
 } */
+.title {
+    background : linear-gradient(13deg, red , blue)
+}
+
+.logo {
+    background: linear-gradient(13deg, red , blue);
+    background-clip: text;
+}
+
+.touche {
+    color: transparent;
+}
