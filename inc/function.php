@@ -49,6 +49,12 @@ function TitleEmployees($bdd,$emp_no){
     return $result;
 }
 
+function test($bdd) {
+    $sql = "SELECT * FROM departments";
+    $result = mysqli_query($bdd,$sql);
+    return $result;
+}
+
 function Historique($bdd, $emp_no){ 
     $sql = "SELECT * FROM salaries JOIN employees ON employees.emp_no = salaries.emp_no  JOIN titles ON titles.emp_no = employees.emp_no WHERE titles.emp_no = '$emp_no' AND salaries.emp_no = '$emp_no' AND titles.to_date != '9999-01-01' AND salaries.to_date != '9999-01-01'";
     //echo $sql;
