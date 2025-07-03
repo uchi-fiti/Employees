@@ -10,6 +10,7 @@
         <thead>
         <tr>
             <th>Departement</th>
+            <th>Number of Employees</th>
             <th>Manager</th>
         </tr>
         <thead>
@@ -17,6 +18,7 @@
         <?php while ($data = mysqli_fetch_assoc($manager_result)) {?>
             <tr>
                 <th scope = "row"><a class = "text-decoration-none text-primary" href="modal.php?page=affiche&num=<?php echo $data['dept_no']?>"><?php echo $data['dept_name']?></a></th>
+                <td class = "text-success"><?php echo $data['nb_employees']?></td>
                 <td class = "text-danger b-2"><?php echo $data['first_name'] ." " .$data['last_name']?></td>
             </tr>
         <?php }?>

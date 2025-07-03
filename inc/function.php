@@ -6,7 +6,7 @@ function selectalldepartements($bdd){
 }
 
 function ManagerOFDepartment($bdd) {
-    $sql = "SELECT * FROM departments JOIN v_manager_current ON v_manager_current.dept_no = departments.dept_no";
+    $sql = "SELECT * FROM v_info_departments";
     // echo $sql;
     $result =  mysqli_query($bdd,$sql);
     return $result;
