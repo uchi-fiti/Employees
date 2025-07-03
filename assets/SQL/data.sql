@@ -11,3 +11,4 @@ employees.first_name , employees.last_name , dept_manager.dept_no ,
 employees.gender , employees.hire_date FROM employees  JOIN dept_manager
 ON dept_manager.emp_no = employees.emp_no 
 WHERE dept_manager.to_date = '9999-01-01'
+
