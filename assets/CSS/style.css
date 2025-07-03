@@ -1,0 +1,54 @@
+.title {
+    background : linear-gradient(13deg, red , blue)
+}
+
+.logo {
+    background: linear-gradient(13deg, red , blue);
+    background-clip: text;
+}
+
+.touche {
+    color: transparent;
+}
+
+/* div{
+    border: 1px solid black;
+} */
+
+.list-group-item {
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+.list-group-item:hover {
+    background: #e3f2fd;
+}
+
+.card {
+    border-radius: 0.75rem;
+}
+.card-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.next {
+    transition: 0.8s;
+}
+.next:hover{
+    background: linear-gradient(13deg, red , blue);
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+.previous {
+    transition: 0.8s;
+}
+.previous:hover{
+    background: linear-gradient(13deg, red , blue);
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+/* div {
+    border: 1px solid black;
+} */
