@@ -11,7 +11,6 @@
         <tr>
             <th>Departement</th>
             <th>Manager</th>
-            <th>modif</th>
         </tr>
         <thead>
         <tbody class = "table-group-divider">
