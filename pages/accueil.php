@@ -1,6 +1,5 @@
 <?php
     $manager_result = ManagerOFDepartment($bdd);
-    echo "test2";
 ?>
 <div class="container">
     <div class="row mt-3 title text-light">
