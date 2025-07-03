@@ -1,5 +1,6 @@
 <?php
     $manager_result = ManagerOFDepartment($bdd);
+    echo "test";
 ?>
 
 <div class="container">
