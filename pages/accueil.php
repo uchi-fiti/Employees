@@ -6,6 +6,7 @@
     <div class="row mt-3 title text-light">
         <h1 class = "text-center">LIST OF DEPARTMENTS</h1>
     </div>
+    <a href="affiche.php">Pull request</a>
     <div class="row">
         <table class = "table table-blue table-striped text-center ">
         <thead>
