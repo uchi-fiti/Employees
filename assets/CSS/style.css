@@ -51,6 +51,7 @@
 }
 /* div {
     border: 1px solid black;
+<<<<<<< HEAD
 } */
 .title {
     background : linear-gradient(13deg, red , blue)
@@ -64,3 +65,6 @@
 .touche {
     color: transparent;
 }
+=======
+} */
+>>>>>>> 5bea83e (new)

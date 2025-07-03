@@ -4,7 +4,6 @@
     $department = selectdepartementsForEmployees($bdd , $dept_no)
 ?>
 <div class="container">
-<<<<<<< HEAD
     <div class="row title text-light text-center mt-3">
         <h1>LIST OF EMPLOYEES FOR <i><?php echo $department['Title']?></i></h1>
     </div>

@@ -2,8 +2,6 @@
     $manager_result = ManagerOFDepartment($bdd);
     echo "test2";
 ?>
-<<<<<<< HEAD
-
 <div class="container">
     <div class="row mt-3 title text-light">
         <h1 class = "text-center">LIST OF DEPARTMENTS</h1>
