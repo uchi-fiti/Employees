@@ -28,6 +28,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="modal.php?page=accueil">Home</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="modal.php?page=details">Details</a>
+              </li>
             </ul>
         </nav>
         <header class = "text-end">

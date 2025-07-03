@@ -9,7 +9,7 @@
     <?php while ($data = mysqli_fetch_assoc($fiche_result)) {?>
         <div class="card mb-4 shadow">
             <div class="card-header bg-primary text-white">
-                <h2 class="mb-0">Fiche de l'employé</h2>
+                <h2 class="mb-0">Employee record</h2>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>First name :</strong> <?php echo $data['first_name']?></li>
@@ -25,14 +25,14 @@
         <div class="col">
             <div class="card shadow">
                 <div class="card-header bg-danger text-white">
-                    <h4 class="mb-0">Salaire & Emploi actuel</h4>
+                    <h4 class="mb-0">Salary & Current Employment</h4>
                 </div>
                 <div class="card-body p-0">
                     <table class="table table-striped mb-0">
                         <thead>
                             <tr>
-                                <th>Salaire</th>
-                                <th>Emploi</th>
+                                <th>Salary</th>
+                                <th>Employment</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,14 +55,14 @@
         <div class="col">
             <div class="card shadow">
                 <div class="card-header bg-secondary text-white">
-                    <h4 class="mb-0">Historique</h4>
+                    <h4 class="mb-0">Historical</h4>
                 </div>
                 <div class="card-body p-0">
                     <table class="table table-striped mb-0">
                         <thead>
                             <tr>
-                                <th>Salaire</th>
-                                <th>Emploi</th>
+                                <th>Salary</th>
+                                <th>Employment</th>
                             </tr>
                         </thead>
                         <tbody>
