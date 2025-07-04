@@ -80,4 +80,19 @@ function CountManANDWoman($bdd) {
     $result = mysqli_query($bdd,$sql);
     return $result;
 }   
+
+function duree($bdd , $emp_no) {
+    $sql = "SELECT t.title , d.dept_name, de.from_date, de.to_date, 
+    DATEDIFF(de.to_date, de.from_date) AS duree
+    FROM dept_emp de
+    JOIN departments d ON d.dept_no = de.dept_no
+    JOIN titles t ON t.emp_no = de.emp_no
+    WHERE de.emp_no = $emp_no
+    ORDER BY duree DESC
+    LIMIT 1";
+    // echo $sql;
+    $result = mysqli_query($bdd, $sql);
+    $return = mysqli_fetch_assoc($result);
+    return $return;
+}
 ?>

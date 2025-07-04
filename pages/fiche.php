@@ -1,5 +1,6 @@
 <?php
     $emp_no = $_GET['num'];
+    $duration = duree($bdd, $emp_no);
     $fiche_result = FicheEmployees($bdd,$emp_no);
     $salaire_employees = SalaireEmployees($bdd,$emp_no);
     $cadre = TitleEmployees($bdd,$emp_no);
@@ -75,6 +76,9 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+            <div class="row">
+                <p class = "text-end">This person spent more time in <i><?php  echo $duration['title']?></i></p>
             </div>
         </div>
     </div>
