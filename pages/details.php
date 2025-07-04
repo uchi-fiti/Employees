@@ -12,7 +12,7 @@
           <th>Department</th>
           <th>Number Of Man</th>
           <th>Number Of Woman</th>
-          <!-- <th>SALARY AVERAGE</th> -->
+          <th>SALARY AVERAGE</th>
       </tr>
       </thead>
       <tbody class = "table-group-divider">
@@ -21,6 +21,7 @@
               <td><?php echo $data['dept_name']?></td>
               <td><?php echo $data['man_count']?></td>
               <td><?php echo $data['woman_count']?></td>
+              <td><?php echo $data['moy']?></td>
           </tr>
       <?php }?>
       </tbody>

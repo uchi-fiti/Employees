@@ -73,11 +73,11 @@ function Recherche($bdd , $department , $Employees_name , $age_min , $age_max , 
     return $result;
 }
 function CountManANDWoman($bdd) {
-   $sql = "SELECT * FROM v_ManEmployees JOIN v_WomanEmployees ON v_ManEmployees.dept_no = v_WomanEmployees.dept_no";
+   $sql = "SELECT v_ManEmployees.dept_name , man_count , woman_count , AVG(salary) as moy FROM v_ManEmployees JOIN v_WomanEmployees 
+   ON v_ManEmployees.dept_no = v_WomanEmployees.dept_no JOIN 
+    v_salaries_per_persons ON v_ManEmployees.dept_no = v_salaries_per_persons.dept_no GROUP BY v_ManEmployees.dept_name";
     // echo $sql;
     $result = mysqli_query($bdd,$sql);
     return $result;
-}
-
-
+}   
 ?>
