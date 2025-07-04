@@ -72,5 +72,12 @@ function Recherche($bdd , $department , $Employees_name , $age_min , $age_max , 
     $result = mysqli_query($bdd, $sql);
     return $result;
 }
+function CountManANDWoman($bdd) {
+   $sql = "SELECT * FROM v_ManEmployees JOIN v_WomanEmployees ON v_ManEmployees.dept_no = v_WomanEmployees.dept_no";
+    // echo $sql;
+    $result = mysqli_query($bdd,$sql);
+    return $result;
+}
+
 
 ?>
