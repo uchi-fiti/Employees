@@ -35,5 +35,3 @@ CREATE OR REPLACE view v_salaries_per_persons AS
 SELECT v_employees_current.emp_no , v_employees_current.first_name , v_employees_current.last_name ,
 v_employees_current.gender , salary , dept_no FROM v_employees_current JOIN v_salaries_current ON v_employees_current.emp_no = v_salaries_current.emp_no;
 
-SELECT v_ManEmployees.dept_name , man_count , woman_count , AVG(salary) as moy FROM v_ManEmployees JOIN v_WomanEmployees ON v_ManEmployees.dept_no = v_WomanEmployees.dept_no JOIN 
-v_salaries_per_persons ON v_ManEmployees.dept_no = v_salaries_per_persons.dept_no GROUP BY v_ManEmployees.dept_name;
